@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BattaPlayerApp));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.topPanel = new System.Windows.Forms.Panel();
             this.buttonDBTeszt = new System.Windows.Forms.Button();
@@ -59,6 +59,7 @@
             this.pictureBoxPreviousButton = new System.Windows.Forms.PictureBox();
             this.pictureBoxVolumeMute = new System.Windows.Forms.PictureBox();
             this.trackBarVolume = new System.Windows.Forms.TrackBar();
+            this.labelMediaName = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.WindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.timerMedia = new System.Windows.Forms.Timer(this.components);
@@ -66,7 +67,6 @@
             this.menuDropDownPlaylists = new CxMenu.CxDropDown.MenuDropDown(this.components);
             this.toolStripAddPlaylist = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuShowAll = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelMediaName = new System.Windows.Forms.Label();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFullScreen)).BeginInit();
@@ -263,27 +263,27 @@
             this.dataGridViewSongs.AllowUserToOrderColumns = true;
             this.dataGridViewSongs.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewSongs.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewSongs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSongs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewSongs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSongs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FilePath,
             this.number,
             this.Title});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.PaleVioletRed;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewSongs.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.PaleVioletRed;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewSongs.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewSongs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewSongs.EnableHeadersVisualStyles = false;
             this.dataGridViewSongs.Location = new System.Drawing.Point(3, 3);
@@ -487,6 +487,20 @@
             this.trackBarVolume.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBarVolume.Scroll += new System.EventHandler(this.trackBarVolume_Scroll);
             // 
+            // labelMediaName
+            // 
+            this.labelMediaName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelMediaName.AutoSize = true;
+            this.labelMediaName.Location = new System.Drawing.Point(356, 0);
+            this.labelMediaName.Name = "labelMediaName";
+            this.labelMediaName.Size = new System.Drawing.Size(235, 24);
+            this.labelMediaName.TabIndex = 8;
+            this.labelMediaName.Text = "mediaName";
+            this.labelMediaName.SizeChanged += new System.EventHandler(this.labelMediaName_SizeChanged);
+            this.labelMediaName.Click += new System.EventHandler(this.labelMediaName_Click);
+            // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -526,36 +540,21 @@
             this.menuDropDownPlaylists.MenuItemTextColor = System.Drawing.Color.DimGray;
             this.menuDropDownPlaylists.Name = "menuDropDown1";
             this.menuDropDownPlaylists.PrimaryColor = System.Drawing.Color.White;
-            this.menuDropDownPlaylists.Size = new System.Drawing.Size(156, 48);
-            this.menuDropDownPlaylists.UseWaitCursor = true;
+            this.menuDropDownPlaylists.Size = new System.Drawing.Size(181, 70);
             this.menuDropDownPlaylists.Closing += new System.Windows.Forms.ToolStripDropDownClosingEventHandler(this.menuDropDownPlaylists_Closing);
             this.menuDropDownPlaylists.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuDropDown1_ItemClicked);
             // 
             // toolStripAddPlaylist
             // 
             this.toolStripAddPlaylist.Name = "toolStripAddPlaylist";
-            this.toolStripAddPlaylist.Size = new System.Drawing.Size(155, 22);
+            this.toolStripAddPlaylist.Size = new System.Drawing.Size(180, 22);
             this.toolStripAddPlaylist.Text = "Add Playlist (+)";
             // 
             // toolStripMenuShowAll
             // 
             this.toolStripMenuShowAll.Name = "toolStripMenuShowAll";
-            this.toolStripMenuShowAll.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuShowAll.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuShowAll.Text = "Show All";
-            // 
-            // labelMediaName
-            // 
-            this.labelMediaName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelMediaName.AutoSize = true;
-            this.labelMediaName.Location = new System.Drawing.Point(356, 0);
-            this.labelMediaName.Name = "labelMediaName";
-            this.labelMediaName.Size = new System.Drawing.Size(235, 24);
-            this.labelMediaName.TabIndex = 8;
-            this.labelMediaName.Text = "mediaName";
-            this.labelMediaName.SizeChanged += new System.EventHandler(this.labelMediaName_SizeChanged);
-            this.labelMediaName.Click += new System.EventHandler(this.labelMediaName_Click);
             // 
             // BattaPlayerApp
             // 

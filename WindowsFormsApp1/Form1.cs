@@ -1,4 +1,5 @@
 ﻿using AxWMPLib;
+using CxMenu.CxDropDown;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -599,6 +600,7 @@ namespace WindowsFormsApp1
             {
                 CurrentPlaylist = e.ClickedItem.ToString();
                 addTodataGridViewSongs(null, true, CurrentPlaylist);
+                menuDropDownPlaylists.Close();
             }
         }
 
