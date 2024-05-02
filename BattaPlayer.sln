@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{C63A82D9-D7BB-4749-BB61-24198053DC6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattaPlayer", "WindowsFormsApp1\BattaPlayer.csproj", "{C63A82D9-D7BB-4749-BB61-24198053DC6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
