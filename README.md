@@ -1,6 +1,6 @@
 # BattaPlayer (Work in Progress)
 
-### A Windows Media Player app written in C# using .NET Windows Forms, with MVC pattern and SQLite3.
+### A Windows Media Player app written in C# using .NET Framework, with MVC pattern and SQLite3.
 
 - Custom controls.
 - Supports multiple playlists, and autoplay. 
