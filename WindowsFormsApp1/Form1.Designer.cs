@@ -109,11 +109,12 @@
             // 
             // buttonDBTeszt
             // 
+            this.buttonDBTeszt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonDBTeszt.Location = new System.Drawing.Point(145, 4);
             this.buttonDBTeszt.Name = "buttonDBTeszt";
             this.buttonDBTeszt.Size = new System.Drawing.Size(75, 23);
             this.buttonDBTeszt.TabIndex = 4;
-            this.buttonDBTeszt.Text = "teszt";
+            this.buttonDBTeszt.Text = "ListDBForFix";
             this.buttonDBTeszt.UseVisualStyleBackColor = true;
             this.buttonDBTeszt.Click += new System.EventHandler(this.buttonDBTeszt_Click);
             // 
@@ -540,20 +541,20 @@
             this.menuDropDownPlaylists.MenuItemTextColor = System.Drawing.Color.DimGray;
             this.menuDropDownPlaylists.Name = "menuDropDown1";
             this.menuDropDownPlaylists.PrimaryColor = System.Drawing.Color.White;
-            this.menuDropDownPlaylists.Size = new System.Drawing.Size(181, 70);
+            this.menuDropDownPlaylists.Size = new System.Drawing.Size(156, 48);
             this.menuDropDownPlaylists.Closing += new System.Windows.Forms.ToolStripDropDownClosingEventHandler(this.menuDropDownPlaylists_Closing);
             this.menuDropDownPlaylists.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuDropDown1_ItemClicked);
             // 
             // toolStripAddPlaylist
             // 
             this.toolStripAddPlaylist.Name = "toolStripAddPlaylist";
-            this.toolStripAddPlaylist.Size = new System.Drawing.Size(180, 22);
+            this.toolStripAddPlaylist.Size = new System.Drawing.Size(155, 22);
             this.toolStripAddPlaylist.Text = "Add Playlist (+)";
             // 
             // toolStripMenuShowAll
             // 
             this.toolStripMenuShowAll.Name = "toolStripMenuShowAll";
-            this.toolStripMenuShowAll.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuShowAll.Size = new System.Drawing.Size(155, 22);
             this.toolStripMenuShowAll.Text = "Show All";
             // 
             // BattaPlayerApp

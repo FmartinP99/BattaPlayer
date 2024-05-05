@@ -63,7 +63,7 @@ namespace MediaPlaylistM.DAO
                     {
                         SQLiteCommand command = conn.CreateCommand();
                         command.Transaction = transaction;
-                        command.CommandText = "INSERT INTO MediaPlaylist " +
+                        command.CommandText = "INSERT OR IGNORE INTO MediaPlaylist " +
                             "(media_id, playlist_id) VALUES " +
                             "(@media_id, @playlist_id)";
                         command.Parameters.Add("media_id", System.Data.DbType.Int16).Value = mid;
